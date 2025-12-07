@@ -282,11 +282,11 @@ make clean && make all
 
 # 👥 Contributors
 
-| Name          |
-| ------------- | 
-|  Ahmad Abdullah  | 
-|  Muhammad Aizazullah  | 
-|  Um e Habiba  | 
+| Name                | Roll No |
+| ------------------- | ------- |
+| Ahmad Abdullah      |  23F-0763  |
+| Muhammad Aizazullah |  23F-0664  |
+| Um e Habiba         |  23F-0740  |
 
 ---
 
