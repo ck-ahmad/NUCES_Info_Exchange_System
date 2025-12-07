@@ -1,0 +1,55 @@
+// ============================================================
+// COPY FROM MEMBER 3: Admin Console (Server Side)
+// ============================================================
+
+void adminConsole() {
+    safeLog("Admin Console started. Type 'help' for commands.");
+    
+    string command;
+    while (true) {
+        cout << "\nAdmin> ";
+        getline(cin, command);
+        
+        if (command == "help") {
+            cout << "Commands:\n"
+                 << "  status  - Show all connected campuses\n"
+                 << "  broadcast <message> - Broadcast message to all campuses\n"
+                 << "  quit - Exit server\n";
+        }
+        else if (command == "status") {
+            lock_guard<mutex> lock(clientsMutex);
+            cout << "\n=== Connected Campuses ===\n";
+            for (const auto& pair : connectedClients) {
+                cout << "Campus: " << pair.first
+                     << " | Status: " << (pair.second.isOnline ? "Online" : "Offline")
+                     << " | Last Seen: " << pair.second.lastSeen << "\n";
+            }
+        }
+        else if (command.find("broadcast ") == 0) {
+            string message = command.substr(10);
+            
+            SOCKET udpSocket = socket(AF_INET, SOCK_DGRAM, 0);
+            
+            lock_guard<mutex> lock(clientsMutex);
+            for (const auto& pair : connectedClients) {
+                if (pair.second.isOnline) {
+                    sockaddr_in campusAddr;
+                    campusAddr.sin_family = AF_INET;
+                    campusAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+                    campusAddr.sin_port = htons(UDP_PORT + 1);
+                    
+                    string broadcastMsg = "BROADCAST|" + message;
+                    sendto(udpSocket, broadcastMsg.c_str(), broadcastMsg.length(), 0,
+                           (sockaddr*)&campusAddr, sizeof(campusAddr));
+                }
+            }
+            
+            closesocket(udpSocket);
+            safeLog("Broadcast sent: " + message);
+        }
+        else if (command == "quit") {
+            safeLog("Shutting down server...");
+            exit(0);
+        }
+    }
+}
