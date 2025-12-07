@@ -284,9 +284,9 @@ make clean && make all
 
 | Name          |
 | ------------- | 
-| **Ahmad **    | 
-| **Aizaz **    | 
-| **Habiba **   | 
+|  Ahmad Abdullah  | 
+|  Muhammad Aizazullah  | 
+|  Um e Habiba  | 
 
 ---
 
