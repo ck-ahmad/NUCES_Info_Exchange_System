@@ -9,6 +9,8 @@
 [![Network](https://img.shields.io/badge/Protocol-TCP%2FUDP-blue?style=for-the-badge&logo=cisco&logoColor=white)](https://github.com/)
 [![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com/)
 [![License](https://img.shields.io/badge/License-Academic-yellow?style=for-the-badge)](https://github.com/)
+[![Watch the Demo](https://img.shields.io/badge/Watch%20Demo-YouTube-red?logo=youtube)](https://youtu.be/kxL4qBCBwU8)
+
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Real-Time+Campus+Communication;TCP+%2B+UDP+Socket+Programming;Multi-Threaded+Architecture;Connecting+NUCES+Campuses" alt="Typing SVG" />
 
