@@ -20,9 +20,9 @@
 
 ---
 
-[![Read Blog 1](https://img.shields.io/badge/Blog%201-Medium-1f6feb?logo=medium&logoColor=white)](https://medium.com/@yourusername/blog1)
-[![Read Blog 2](https://img.shields.io/badge/Blog%202-Medium-1f6feb?logo=medium&logoColor=white)](https://medium.com/@ahmadleo498/building-real-time-status-monitoring-udp-heartbeats-broadcasting-29b7b9feb6d7)
-[![Read Blog 3](https://img.shields.io/badge/Blog%203-Medium-1f6feb?logo=medium&logoColor=white)](https://medium.com/@umehabiba1624/admin-console-client-interface-design-caa84599dbf2)
+[![Read Blog 1](https://img.shields.io/badge/Aizaz%20-Medium-1f6feb?logo=medium&logoColor=white)](https://medium.com/@yourusername/blog1)
+[![Read Blog 2](https://img.shields.io/badge/Ahmad%20-Medium-1f6feb?logo=medium&logoColor=white)](https://medium.com/@ahmadleo498/building-real-time-status-monitoring-udp-heartbeats-broadcasting-29b7b9feb6d7)
+[![Read Blog 3](https://img.shields.io/badge/Habiba%20-Medium-1f6feb?logo=medium&logoColor=white)](https://medium.com/@umehabiba1624/admin-console-client-interface-design-caa84599dbf2)
 
 ---
 </div>
